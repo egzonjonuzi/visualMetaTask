@@ -1,0 +1,11 @@
+<input type="search" [(ngModel)]="searchValue" class="search-input" placeholder="Search Categories" (keyup)="searchCategories($event)">
+<p class="search-title" *ngIf="categories.length === 0 && searchValue.length < 3">Please start typing to see some categories</p>
+<p class="search-title" *ngIf="categories.length === 0 && searchValue.length > 3">"{{searchValue}}" cannot be found</p>
+<div class="categories">
+  <div (click)="clickCategory(item.id)" class="category" *ngFor="let item of categories">
+    <p  *ngFor="let category of item.items">
+      <mat-icon>sell</mat-icon> {{category}}</p>
+  </div>
+</div>
+
+

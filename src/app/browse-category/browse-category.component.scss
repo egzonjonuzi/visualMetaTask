@@ -1,0 +1,33 @@
+.search-input {
+  width: 100%;
+  height: 40px;
+}
+.search-title{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.categories {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  .category {
+    cursor: pointer;
+    width: calc(33.333% - 20px);
+    height: fit-content;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    p {
+      font-size: 20px;
+      color: #4b5c6b;
+      margin: 20px;
+      .mat-icon{
+        font-size: 20px;
+      }
+    }
+  }
+  .category:hover {
+    background-color:rgba(192,192,192,0.3);
+  }
+}

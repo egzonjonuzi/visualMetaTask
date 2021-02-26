@@ -1,0 +1,6 @@
+<p class="title">Categories</p>
+<textarea [(ngModel)]="categoryValue" class="textarea" rows="3" placeholder="Add your categories here with -(dash) and > (greater than) seperators e.g 4 - Animals & Pet Supplies > Pet Supplies > Cat Supplies">
+
+</textarea>
+<p class="mat-error" *ngIf="error">The text is not in the right format</p>
+<button class="btn-add" mat-button color="default" (click)="addCategoryInServer()"><mat-icon>save</mat-icon> Save</button>

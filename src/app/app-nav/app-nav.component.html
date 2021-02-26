@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1 class="title">Category Browser</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/add-categories'"><mat-icon>library_add</mat-icon> Add </a>
+      <a mat-button [routerLink]="'/browse-categories'"><mat-icon>sell</mat-icon> Browse </a>
+    </div>
+   <div>
+     <hr>
+   </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
